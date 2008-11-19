@@ -1,10 +1,6 @@
-" Vimperator ColorScheme
-" evening
-"
-" put into
-" ~/.vimperator/colors/ directory
-" and
-" :colorscheme evening
+" ==VimperatorColorSchema==
+" name: evening
+" ==/VimperatorColorSchema==
 
 hi StatusLine           color: #333;     background: #ddd;
 
@@ -27,12 +23,15 @@ hi Object               color: SkyBlue;
 hi Function             color: Khaki;
 hi URL                  color: GreenYellow;
 
+hi TabNumber            color: DarkOrange;
+hi TabText              color: #333;
+
 set! browser.tabs.closeButtons=3
-style about:blank html { background-color:#333; }
+" style about:blank html { background-color:#333; }
 style -name tab chrome://* <<EOM
 #content { background-color: #ddd; } /* tabbar */
 .tabs-alltabs-button { padding: 0 !important; }   
-.tabs-container { height: 18px; }
+.tabs-container { height: 20px; border-bottom:2px solid #333; }
 .tabs-container > stack {display:none;} /* remove tab selection menu */
 .tabbrowser-tab {
     -moz-appearance: none !important;
@@ -43,12 +42,10 @@ style -name tab chrome://* <<EOM
     -moz-border-radius-bottomright:0 !important;
     -moz-border-radius-bottomleft:0 !important;
     border: none !important;
-    border-bottom: thin solid #ddd !important;
     background-image:none !important;
-    background-color: #ddd !important;
+    background-color: #333 !important;
 }
-.tabbrowser-tab > .tab-text { color: #333; }
-.tabbrowser-tab[selected=true] { background: #333 !important; }
+.tabbrowser-tab[selected=false] { background: #ddd !important; }
 .tabbrowser-tab[selected=true] > .tab-text { color: #ddd !important; }
 EOM
 
