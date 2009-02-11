@@ -1,6 +1,6 @@
 " ==Vimperator_Color_Scheme==
 " name: Simple
-" ==Sweets_Color_Scheme==
+" ==Simple_Color_Scheme==
 
 highlight Bell display: none;
 
