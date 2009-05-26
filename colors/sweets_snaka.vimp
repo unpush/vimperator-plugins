@@ -8,6 +8,9 @@ hi HintElem background-color: pink; color: black;
 hi HintActive background-color: hotpink; color: white;
 
 hi StatusLine     color:  CornflowerBlue; background: #000; font-weight: normal; font-size: 12pt;
+hi StatusLineBroken   color:  black; background: #ffa0a0; font-weight: normal; font-size: 12pt;
+hi StatusLineExtended color:  black; background: #a0ffa0; font-weight: normal; font-size: 12pt;
+hi StatusLineSecure   color:  black; background: #a0a0ff; font-weight: normal; font-size: 12pt;
 
 hi Normal     color:  LightYellow;  background: #333; font-size: 12pt;
 hi CmdLine    color:  LightYellow;  background: #333; font-size: 14pt;
