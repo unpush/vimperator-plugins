@@ -42,23 +42,39 @@ hi TabNumber  color: white; font-weight: bold; font-size:10pt;
 style -name tab chrome://* <<EOM
 #content { background-color: #ddd !important;} /* tabbar */
 .tabs-alltabs-button { padding: 0 !important; }
-.tabs-container { height: 20px; border-bottom: 2px solid #000; }
+.tabs-container { height: 20px; border-bottom: 1px solid #000; }
 .tabs-container > stack { display:none; } /* remove tab selection menu */
 .tabbrowser-tab {
   -moz-apperance: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  -moz-border-radius-topleft: 0 !important;
+  -moz-border-radius-topleft: 8 !important;
   -moz-border-radius-topright: 0 !important;
   -moz-border-radius-bottomright: 0 !important;
-  -moz-border-radius-bottomleft: 0 !important;
+  -moz-border-radius-bottomleft: 8 !important;
   border: none !important;
   background-image:none !important;
   background-color: #ff69b4; !important;
 }
 .tabbrowser-tab[selected=false] { background: #ddd !important; }
 .tabbrowser-tab[selected=true] > .tab-text { color: #ddd !important; }
+.tabbrowser-tab[selected=true] { background: Pink !important; }
 .tabbrowser-strip { background: #333 !important; }
+/* remove close button */
+.tab-close-button {
+  display: none;
+}
+/* splitter */
+.treestyletab-splitter {
+  width: 0 !important;
+}
+.treestyletab-splitter grippy {
+  display: none !important;
+}
+/* set unread tabs style */
+#content tab:not([selected]) {
+  background-color: #666 !important;
+}
 EOM
 
 style -name statusbar chrome://* <<EOM
