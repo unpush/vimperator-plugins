@@ -10,7 +10,6 @@ hi StatusLine 		color: DeepPink;	background: #000;	font-weight: normal; font-siz
 
 hi Normal 		color: LightYellow;	background: #333;	font-size: 10pt;
 hi InfoMsg		color: LightYellow;	background: #333;	font-size: 10pt;
-hi Message		color: LightYellow;	background: #333;	font-size: 10pt;
 hi ModeMsg		color: LightYellow;	background: #333;	font-size: 10pt;
 hi MoreMsg		color: LimeGreen;	background: #333;
 hi LineNr		color: DeepPink;	background: #333;	font-size: 10pt;
@@ -46,8 +45,6 @@ style -name tab chrome://* <<EOM
 }
 .tabbrowser-tab {
 	-moz-apperance: none !important;
-	-moz-box-align: left !important;
-	-moz-box-pack: left !important;
 	margin: 0 !important;
 	padding: 0 !important;
 	-moz-border-radius-topleft: 0 !important;
@@ -66,10 +63,6 @@ style -name tab chrome://* <<EOM
 .tab-image-middle,
 .tab-image-right {
 	background-image: none !important;
-}
-.tab-image-right {
-	width: auto !important;
-	max-width: 8px;
 }
 EOM
 
