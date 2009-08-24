@@ -28,7 +28,7 @@ hi Function				color: navy;
 hi Gradient				height: 1px; margin-bottom: -1px; margin-top: -1px;
 hi GradientLeft				background-color: magenta;
 hi GradientRight			background-color: white;
-hi Hint					font-family: monospace; font-size: 10px; font-weight: bold; color: white; background-color: black; border-color: ButtonShadow; border-width: 0; border-style: solid; padding: 0 1px;
+hi Hint					font-family: monospace; font-size: 10px; font-weight: bold; color: white; background-color: red; border: 0 solid ButtonShadow; padding 0 1px;
 hi Hint::after				content: attr(number);
 hi HintActive				background: #88FF00; color: black;
 hi HintElem				background-color: yellow; color: black;
